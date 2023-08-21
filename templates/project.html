@@ -1,0 +1,70 @@
+{% extends "template.html" %}
+
+{% block content %}
+<div class="card-container mt-4">
+  <div class="card card-project" style="width: 35rem; padding: 10px;">
+    <img src="https://1000logos.net/wp-content/uploads/2022/07/University-of-Washington-Logo.jpg"
+      class="card-img-top ml-4 mt-2 p-3" alt="...">
+    <div class="card-body card-bottom">
+      <h5 class="card-title text-center p-1"><strong>University of Washington Major Finder</strong></h5>
+      <p class="card-text text-center">This application was created with the intention of helping underclassmen at the
+        University of
+        Washington navigate through the different majors offered.
+      </p>
+      <div class="d-flex justify-content-center mt-2">
+        <a href="{{ url_for('project_details', project_id=1) }}" class="btn btn-dark mr-2 w-50">Detailed Overview</a>
+        <a href="https://github.com/phariharan818/uw-major-finder" class="btn btn-dark w-50" target="_blank">Repository
+          Link</a>
+      </div>
+    </div>
+  </div>
+  <div class="card card-project" style="width: 35rem; padding: 10px;">
+    <img src="{{ url_for('static', filename='img/chart3.png') }}" style="overflow: visible;"
+      class="card-img-top ml-3 p-3" alt="...">
+    <div class="card-body card-bottom">
+      <h5 class="card-title text-center p-1"><strong>Analysis of Vogue Models</strong></h5>
+      <p class="card-text text-center">This project was created to find out whether Vogue prefers lighter skin color
+        models compared
+        to darker skin-colored models on their magazine covers.</p>
+      <div class="d-flex justify-content-center mt-2">
+        <a href="{{ url_for('project_details', project_id=2) }}" class="btn btn-dark mr-2 w-50">Detailed Overview</a>
+        <a href="https://github.com/phariharan818/CSE163FinalProject" class="btn btn-dark w-50"
+          target="_blank">Repository Link</a>
+      </div>
+    </div>
+  </div>
+  <div class="card card-project" style="width: 35rem; padding: 10px;">
+    <div class="card-img-container">
+      <img src="{{ url_for('static', filename='img/mindmeet.png') }}" class="card-img-top ml-4 p-5" alt="..."
+        style="max-width: 100%; max-height: 400px; object-fit: contain;">
+    </div>
+    <div class="card-body card-bottom">
+      <h5 class="card-title text-center p-1"><strong>MindMeet</strong></h5>
+      <p class="card-text text-center p-1">This design was created with the idea of having an application available for
+        users who are
+        primarily interested in group therapy.
+      </p>
+      <div class="d-flex justify-content-center mt-2">
+        <a href="{{ url_for('project_details', project_id=3) }}" class="btn btn-dark mr-2 w-50">Detailed Overview</a>
+        <a href="https://www.figma.com/proto/F7yqMn6vOQFVpCBIqKKQXZ/360-Final-Copy?node-id=1-4259&page-id=0%3A1&scaling=min-zoom&starting-point-node-id=1%3A4259"
+          class="btn btn-dark w-50" target="_blank">Figma Link</a>
+      </div>
+    </div>
+  </div>
+  <div class="card card-project" style="width: 35rem; padding: 10px;">
+    <img src="{{ url_for('static', filename='img/sustainify.png') }}" style="overflow: visible;"
+      class="card-img-top mt-5 ml-3" alt="...">
+    <div class="card-body card-bottom">
+      <h5 class="card-title text-center p-1"><strong>Sustainify</strong></h5>
+      <p class="card-text text-center">This application was created at the 2023 TechTogether Hackathon in Seattle, where
+        the theme
+        was “planting the seed.”</p>
+      <div class="d-flex justify-content-center mt-2">
+        <a href="{{ url_for('project_details', project_id=4) }}" class="btn btn-dark mr-2 w-50">Detailed Overview</a>
+        <a href="https://github.com/phariharan818/hackathon-1" class="btn btn-dark w-50" target="_blank">Repository
+          Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
